@@ -12,7 +12,13 @@ liste2 = [1, 2, 3, 4]
 
 
 class Product:
-    # method
+    # Instance method
+    def get_product(self):
+        return f"Ürün adı:{self.name}, Ürün fiyatı: {self.fiyat}"
+
+    def kdv_price(self):
+        return self.fiyat * 1.20
+
     # attribute, property
 
     #   Constructor
@@ -32,7 +38,8 @@ print(p2.name, p2.fiyat)  # Samgung Galaxy A5 100
 liste = [p1, p2]
 
 for i in liste:
-    print(f"Ürün adı:{i.name}, Ürün fiyatı: {i.fiyat}")
+    print(i.get_product())
+    print("KDV'li fiyat: " + str(i.kdv_price()) + "\n")
 
 """
 Ürün adı:Iphone 15, Ürün fiyatı: 100
