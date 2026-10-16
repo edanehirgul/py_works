@@ -110,3 +110,7 @@ def paraYatırma():
 login()
 
 # pass -> null operation - nothing happens when it executes.
+
+
+# hesaplara tek tek giriş
+# ek hesaptan para çekme izni eklenebilir
